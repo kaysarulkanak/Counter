@@ -2,7 +2,7 @@
     <div class="container">
         <div class="field has-addons has-addons-centered" style="margin-top: 60px;">
             <p class="control">
-                <button class="button is-info" @click="addCount1()">
+                <button class="button is-info" @click="addCount()">
                     +
                 </button>
             </p>
@@ -11,7 +11,7 @@
             </p>
 
             <p class="control">
-                <button class="button is-success" @click="subCount1()">
+                <button class="button is-success" @click="subCount()">
                     -
                 </button>
             </p>
@@ -29,15 +29,15 @@
 
 
             number(){
-                return this.$store.getters.number1
+                return this.$store.getters.number
             }
         },
         methods:{
-            addCount1(){
-                this.$store.dispatch('addCount3')
+            addCount(){
+                this.$store.dispatch('addCount')
             },
-            subCount1(){
-                this.$store.dispatch('subCount3')
+            subCount(){
+                this.$store.dispatch('subCount')
             }
 
         }

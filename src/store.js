@@ -6,24 +6,24 @@ export const store = new Vuex.Store({
         number: 0
     },
     getters:{
-        number1(state){
+        number(state){
             return state.number
         }
     },
     mutations:{
-        addCount2(state){
+        addCount(state){
             state.number++
         },
-        subCount2(state){
+        subCount(state){
             state.number--
         }
     },
     actions:{
-        addCount3(context){
-            context.commit('addCount2')
+        addCount(context){
+            context.commit('addCount')
         },
-        subCount3(context){
-            context.commit('subCount2')
+        subCount(context){
+            context.commit('subCount')
 
         }
     }

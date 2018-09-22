@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="field has-addons">
+        <div class="field has-addons has-addons-centered" style="margin-top: 60px;">
             <p class="control">
                 <button class="button is-info" @click="addCount1()">
                     +
